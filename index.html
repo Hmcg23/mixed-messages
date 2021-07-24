@@ -22,7 +22,10 @@ function createMessage() {
         message.push(value[random])
     };
     return message.join('')
-};   
+};
+function getID() {
+    document.getElementById("fact").innerHTML = createMessage();
+}
     </script>
 </head>
 <body>
@@ -32,6 +35,6 @@ function createMessage() {
     <script>
         document.getElementById("fact").innerHTML = createMessage();
     </script>
-    <button>Click Me :)</button>
+    <button onclick="getID();" type="button">Click Me :)</button>
 </body>
 </html>

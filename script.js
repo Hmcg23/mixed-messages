@@ -5,6 +5,8 @@ const words = {
     punctuation: ['.', '!', '!!!', '...', '?!', '. Cool Right?', '. I think that\'s pretty cool!!', '. Awesome.']
 }
 
+
+
 function createMessage() {
     let message = [];
     for (const [key, value] of Object.entries(words)) {
@@ -13,5 +15,7 @@ function createMessage() {
     };
     return message.join('')
 };
+
+
 
 console.log(createMessage())

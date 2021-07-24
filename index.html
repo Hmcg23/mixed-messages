@@ -30,11 +30,8 @@ function getID() {
 </head>
 <body>
     <h1 id="text">Fun Fact Generator!</h1>
-    <h2>Click below to randomly generate a (fake) fun fact!</h2>
-    <h1 id="fact">(Fun Fact go here)</h1>
-    <script>
-        document.getElementById("fact").innerHTML = createMessage();
-    </script>
-    <button onclick="getID();" type="button">Click Me :)</button>
+    <h2>Click below to randomly generate a (fake) fun fact!</h2>    
+    <button onclick="getID();" type="button">Generate!</button>
+    <h1 id="fact"></h1>
 </body>
 </html>
